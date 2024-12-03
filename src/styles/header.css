@@ -1,0 +1,49 @@
+.header-container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 73.7em;
+    height: 49.1em;
+    margin: 0%;
+}
+
+img {
+    width: 6em;
+    height: 5em;
+    margin-left: 1em;
+    margin-right: 10em;
+}
+
+.header {
+    display: flex;
+        color: whitesmoke;
+        background-color: green;
+        margin-top: 0%;
+        justify-content: center;
+        align-items: center;
+        height: 5em;
+}
+
+.header-img {
+    display: flex;
+        justify-content: flex-start;
+        margin: 0;
+        width: 6em;
+        height: 5em;
+        margin-left: 1em;
+        margin-right: 10em;
+}
+
+h1 {
+    width: 100%;
+    margin-left: 2.5em;
+}
+
+.header-cadeaux {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    width: 6em;
+    height: 7em;
+    margin-left: 10em;
+    margin-right: 1em;
+    
+}

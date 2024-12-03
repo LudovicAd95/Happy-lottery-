@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    background-color: green;
+    color: whitesmoke;
+   
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: green;
+    color: whitesmoke;
+    height: 2em;
+    margin: 0%;
+}

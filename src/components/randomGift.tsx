@@ -39,7 +39,7 @@ const RandomGift: React.FC = () => {
 
   return (
     <div>
-      <button onClick={getRandomItem}>Bouton Magique</button>
+      <button type="button" onClick={getRandomItem}>Bouton Magique</button>
     </div>
   );
 };

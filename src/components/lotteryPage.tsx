@@ -1,6 +1,6 @@
 import Header from './header';
 import info from './info';
-import randomGift from './randomGift';
+import RandomGift from './randomGift';
 import rewardsTable from './rewardsTable';
 import Footer from './footer';
 
@@ -12,7 +12,7 @@ function lotteryPage () {
         <Header />
         <div className='mainpage'>
             <rewardsTable />
-            <randomGift />
+            <RandomGift />
             <info />
         </div>
         <Footer />

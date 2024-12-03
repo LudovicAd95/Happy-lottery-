@@ -1,47 +1,53 @@
-// import React from 'react';
-// import { useState } from 'react';
+import { useEffect, useState } from "react";
+import "../styles/randomGift.css";
 
-// const [data, setData] = useState([]);
-// const [randomItem, setRandomItem] = useState(null);
-// const [loading, setLoading] = useState(false);
-// const [error, setError] = useState(null);
+interface toys {
+  id: number;
+  name: string;
+  description: string;
+  photo: number;
+  age_range: number;
+  gender: string;
+}
 
-// const RandomGift: React.FC = () => {
-//   const fetchData = () => {
-//     setLoading(true);
-//     setError(null);
+function RandomGift() {
+  const [toys, setToys] = useState<toys[]>([]);
+  const [randomItem, setRandomItem] = useState<toys | null>(null);
 
-//     fetch('https://happylottery.vercel.app/?vercelToolbarCode=qzqZXGWpMhiqCHo', {
-//       method: 'GET',
-//     })
-//       .then((response) => {
-//         if (!response.ok) {
-//           throw new Error('re-essaye');
-//         }
-//         return response.json();
-//       })
-//       .then((data) => {
-//         setData(data);
-//         setLoading(false);
-//       })
-//       .catch((err) => {
-//         setError(err.message);
-//         setLoading(false);
-//       });
-//   };
+  useEffect(() => {
+    const fetchToys = async () => {
+      try {
+        const response = await fetch("https://happylottery.vercel.app/items", {
+          method: "GET",
+        });
+        const data = await response.json();
+        setToys(data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
 
-//   const getRandomItem = () => {
-//     if (data.length > 0) {
-//       const randomIndex = Math.floor(Math.random() * data.length);
-//       setRandomItem(data[randomIndex]);
-//     }
-//   };
+    fetchToys();
+  }, []);
 
-//   return (
-//     <div>
-//       <button type="button" onClick={getRandomItem}>Bouton Magique</button>
-//     </div>
-//   );
-// };
+    console.log(toys);
 
-// export default RandomGift;
+  const getRandomItem = () => {
+    if (toys.length > 0) {
+      const randomIndex = Math.floor(Math.random() * toys.length);
+      setRandomItem(toys[randomIndex]);
+    }
+    console.log(randomItem);
+  };
+
+  return (
+    <div className="randomGiftContainer">
+      <h1 className="title" id="ourServices">LA MAGIE DE NOEL:</h1>
+      <div>
+        <button type="button" onClick={getRandomItem}>Bouton Magique</button>
+      </div>
+    </div>
+  );
+}
+
+export default RandomGift;

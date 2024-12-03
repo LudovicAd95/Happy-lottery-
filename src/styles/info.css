@@ -1,0 +1,25 @@
+.infoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: aliceblue;
+  align-items: center;
+  margin-top: 20px;
+  border: solid red;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.h1 {
+  color: white;
+}
+
+.magicButton {
+  display: flex;
+}

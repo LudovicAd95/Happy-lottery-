@@ -1,11 +1,11 @@
 import React from "react";
-import "../styles/Footer.css";
+import "../styles/footer.css";
 
 
 const Footer = () => {
   return (
     <div className="footer">
-      <a href="">Régles</a>
+      <p>Régles</p>
       <p>About</p>
       <p>Legal</p>
     </div>

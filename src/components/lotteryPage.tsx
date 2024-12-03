@@ -1,23 +1,17 @@
 import Header from './header';
-import info from './info';
-import RandomGift from './randomGift';
-import rewardsTable from './rewardsTable';
+// import Info from './info';
+// import RandomGift from './randomGift';
+// import RewardsTable from './rewardsTable';
 import Footer from './footer';
 
 import '../styles/lotteryPage.css'
 
-function lotteryPage () {
+function LotteryPage () {
   return (
-    <div className='body'>
-        <Header />
-        <div className='mainpage'>
-            <rewardsTable />
-            <RandomGift />
-            <info />
-        </div>
-        <Footer />
-    </div>
+    <>
+      <p>Hello World</p>
+    </>
   );
 }
 
-export default lotteryPage;
+export default LotteryPage;

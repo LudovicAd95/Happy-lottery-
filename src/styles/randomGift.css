@@ -7,3 +7,13 @@
     margin-top: 20px;
     border: solid red;
 }
+
+.h1 {
+    font-size: 3em;
+    color: blue;
+}
+
+.h2 {
+    font-size: 2em;
+    color: red;
+}

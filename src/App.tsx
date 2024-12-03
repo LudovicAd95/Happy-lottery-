@@ -7,6 +7,8 @@ function App() {
   return (
     <>
     <Homepage />
+
+    <p>page principale</p>
     </>
   )
 }

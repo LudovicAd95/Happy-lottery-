@@ -1,25 +1,25 @@
 .infoCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: aliceblue;
-  align-items: center;
-  margin-top: 20px;
-  border: solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: aliceblue;
+	align-items: center;
+	margin-top: 20px;
+	border: solid red;
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
 }
 
 .h1 {
-  color: white;
+	color: rgb(24, 35, 122);
 }
 
 .magicButton {
-  display: flex;
+	display: flex;
 }

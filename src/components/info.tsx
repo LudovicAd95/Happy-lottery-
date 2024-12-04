@@ -24,7 +24,6 @@ function Info() {
 
 		setUsersList((prevUsersList) => {
 			const updatedList = [...prevUsersList, userInfo];
-			// Stocker la liste mise à jour dans le LocalStorage
 			localStorage.setItem("usersList", JSON.stringify(updatedList));
 			console.log(
 				"Liste Utilisateurs mise à jour dans LocalStorage:",
@@ -90,7 +89,7 @@ function Info() {
 						</label>
 					</div>
 					<button type="submit" id="magicButton">
-						LANCER LA MAGIE DE NOEL!
+						Enregistrez vous!
 					</button>
 				</form>
 			</div>

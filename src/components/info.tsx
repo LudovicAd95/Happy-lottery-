@@ -25,6 +25,7 @@ function Info() {
 		setUsersList((prevUsersList) => {
 			const updatedList = [...prevUsersList, userInfo];
 			localStorage.setItem("usersList", JSON.stringify(updatedList));
+			localStorage.setItem("selectedAgeRange", age); // Stocker la tranche d'âge sélectionnée
 			console.log(
 				"Liste Utilisateurs mise à jour dans LocalStorage:",
 				updatedList,

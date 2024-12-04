@@ -10,8 +10,8 @@ function UpdateRewardsTable() {
 
 	return (
 		<div className="rewards-container">
-			<h1>Tableau des récompenses:</h1>
-			<button type="button" onClick={handleShowRewards}>
+			<h1>TABLEAU DES RECOMPENSES</h1>
+			<button type="button" className="buttonR" onClick={handleShowRewards}>
 				Afficher les récompenses!
 			</button>
 			{showRewards && <RewardsTable />}

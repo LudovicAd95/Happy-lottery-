@@ -1,9 +1,32 @@
 .rewards-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-background-color: rgb(0, 0, 0);
-align-items: center;
-margin-top: 20px;
-border: solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	background-color: #d40c0c53;
+	border-radius:60px;
+	border: solid 2px #d4d40c;
+    
+}
+td {
+color: whitesmoke;
+font-weight: bold;
+}
+
+th {
+color: whitesmoke;
+font-weight: bold;
+}
+
+.buttonR {
+    border-radius: 15px;
+	padding: 0.75rem 1rem;
+	background-color: green;
+	color: white;
+	border: none;
+	margin-top: 12em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.2s;
 }

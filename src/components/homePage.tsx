@@ -21,7 +21,7 @@ const Homepage: React.FC<HomePageProps> = ({ onNavigate }) => {
         </div>
       </div>
       <div className="goButton">
-        <button type="button" onClick={handleButtonClick}>Participer</button>
+        <button className="buttonGO" type="button" onClick={handleButtonClick}>Participer</button>
       </div>
     </div>
   );

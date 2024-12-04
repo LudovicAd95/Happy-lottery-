@@ -1,7 +1,11 @@
 .mainPage {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	height: 69vh;
+	margin: 3em;
+	padding: 0 0 100px 0;
+}
+h1 {
+	color: whitesmoke;
 }

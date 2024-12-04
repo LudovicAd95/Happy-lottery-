@@ -52,7 +52,7 @@ function RandomGift() {
   return (
     <div className="randomGiftContainer">
       <h1 className="title" id="ourServices">
-        LA MAGIE DE NOEL:
+        LA MAGIE DE NOEL
       </h1>
       {randomItem && (
         <div className="randomItem">
@@ -62,7 +62,7 @@ function RandomGift() {
           <p>Tranche d'âge: {randomItem.age_range} ans</p>
         </div>
       )}
-      <button type="button" onClick={getRandomItem}>
+      <button type="button" className="buttonM" onClick={getRandomItem}>
         Bouton Magique
       </button>
     </div>

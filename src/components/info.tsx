@@ -44,7 +44,7 @@ function Info() {
 	return (
 		<div className="infoContainer">
 			<div className="infoCard">
-				<h1>VOS INFOS:</h1>
+				<h1>VOS INFOS</h1>
 				<form className="form" onSubmit={handleSubmit}>
 					<div>
 						<label>
@@ -89,7 +89,7 @@ function Info() {
 							</select>
 						</label>
 					</div>
-					<button type="submit" id="magicButton">
+					<button type="submit" className="button" id="magicButton">
 						Enregistrez vous!
 					</button>
 				</form>

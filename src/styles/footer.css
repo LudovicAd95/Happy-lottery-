@@ -5,6 +5,13 @@ a {
    
 }
 
+.footer-container {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .footer {
     display: flex;
     justify-content: space-evenly;
@@ -13,4 +20,9 @@ a {
     color: whitesmoke;
     height: 2em;
     margin: 0%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    margin-top: 3em;
+    
 }

@@ -1,9 +1,11 @@
 .rewards-container {
-display: flex;
-flex-direction: column;
-justify-content: center;
-background-color: rgb(215, 18, 18);
-align-items: center;
-margin-top: 20px;
-border: solid red;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	background-color: #d40c0c53;
+	border-radius:60px;
+	border: solid 2px #d4d40c;
+    
 }

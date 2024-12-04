@@ -55,14 +55,16 @@ function Info() {
 								onChange={(e) => setFirstname(e.target.value)}
 							/>
 						</label>
+						<br />
 						<label>
-							Nom:
+							Nom:  
 							<input
 								type="text"
 								value={lastname}
 								onChange={(e) => setLastname(e.target.value)}
 							/>
 						</label>
+						<br />
 						<label>
 							Genre:
 							<select
@@ -77,6 +79,7 @@ function Info() {
 								<option value="Non Renseigné">Non-Renseigné</option>
 							</select>
 						</label>
+						<br />
 						<label>
 							Tranche d'âge:
 							<select

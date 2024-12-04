@@ -57,7 +57,7 @@ function RewardsTable() {
                 <td>{user.lastname}</td>
                 <td>{user.gender}</td>
                 <td>{user.age}</td>
-                <td>{rewardsList[index]?.name}</td>
+                <td>{selectedItem?.name}</td>
               </tr>
             ))}
           </tbody>

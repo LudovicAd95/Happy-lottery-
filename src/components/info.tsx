@@ -68,8 +68,10 @@ function Info() {
 							<select
 								name="gender"
 								id="gender-select"
+								defautValue="à renseigner"
 								onChange={(e) => setGender(e.target.value)}
 							>
+								<option value="à renseigner">à renseigner</option>
 								<option value="Homme">Homme</option>
 								<option value="Femme">Femme</option>
 								<option value="Non Renseigné">Non-Renseigné</option>
@@ -80,8 +82,10 @@ function Info() {
 							<select
 								name="age"
 								id="age-select"
+								defautValue="à renseigner"
 								onChange={(e) => setAge(e.target.value)}
 							>
+								<option value="à renseigner">à renseigner</option>
 								<option value="0 à 3 ans">0 à 3 ans</option>
 								<option value="4 à 6 ans">4 à 6 ans</option>
 								<option value="7 à 10 ans">7 à 10 ans</option>

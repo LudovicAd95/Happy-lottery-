@@ -20,19 +20,19 @@ interface SelectedItem {
 
 function RewardsTable() {
   const [usersList, setUsersList] = useState<UserInfo[]>([]);
-  const [selectedItem, setSelectedItem] = useState<SelectedItem | null>(null);
+  const [rewardsList, setRewardsList] = useState<SelectedItem[]>([]);
 
   useEffect(() => {
     const storedUsersList = localStorage.getItem("usersList");
     if (storedUsersList) {
       setUsersList(JSON.parse(storedUsersList));
-      console.log("Reception des data dans usersList dans RewardsTable:", storedUsersList);
+      console.log("Reception data usersList dans RewardsTable:", storedUsersList);
     }
 
-    const storedSelectedItem = localStorage.getItem("randomItem");
-    if (storedSelectedItem) {
-      setSelectedItem(JSON.parse(storedSelectedItem));
-      console.log("Reception des data dans selectedItem dans RewardsTable:", storedSelectedItem);
+    const storedRewardsList = localStorage.getItem("RewardsList");
+    if (storedRewardsList) {
+      setRewardsList(JSON.parse(storedRewardsList));
+      console.log("Reception data rewardsList dans RewardsTable:", storedRewardsList);
     }
   }, []);
 
@@ -52,13 +52,13 @@ function RewardsTable() {
             </tr>
           </thead>
           <tbody>
-            {usersList.map((user) => (
+            {usersList.map((user, index) => (
               <tr key={user.id}>
                 <td>{user.firstname}</td>
                 <td>{user.lastname}</td>
                 <td>{user.gender}</td>
                 <td>{user.age}</td>
-                <td>{selectedItem?.name}</td>
+                <td>{rewardsList[index]?.name}</td>
               </tr>
             ))}
           </tbody>

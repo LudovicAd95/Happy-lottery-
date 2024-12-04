@@ -13,6 +13,8 @@ interface toys {
 function RandomGift() {
   const [toys, setToys] = useState<toys[]>([]);
   const [randomItem, setRandomItem] = useState<toys | null>(null);
+  const [rewardsList, setRewardsList] = useState<toys[]>([]);
+
 
   useEffect(() => {
     const fetchToys = async () => {
@@ -35,28 +37,13 @@ function RandomGift() {
       setRandomItem(selectedItem);
       localStorage.setItem("randomItem", JSON.stringify(selectedItem));
       console.log("Item aléatoire ajouté au localStorage:", selectedItem);
-      const rewardsTable = (usersList: UserInfo[], selectedItem: SelectedItem) => {
-        const updatedList = usersList.map((user) => {
-          if (user.age === selectedItem.age_range.toString()) {
-            return { ...user, selectedItem };
-          }
-          return user;
-        });
-        localStorage.setItem("usersList", JSON.stringify(updatedList));
-        console.log("Liste Utilisateurs mise à jour dans LocalStorage:", updatedList);
-        return updatedList;
-      }
-      		setUsersList((prevUsersList) => {
-			const updatedList = [...prevUsersList, userInfo];
-			localStorage.setItem("usersList", JSON.stringify(updatedList));
-			localStorage.setItem("selectedAgeRange", age); // Stocker la tranche d'âge sélectionnée
-			console.log(
-				"Liste Utilisateurs mise à jour dans LocalStorage:",
-				updatedList,
-			);
-			return updatedList;
-		});
 
+      setRewardsList((prevRewardsList) => {
+        const updatedRewardsList = [...prevRewardsList, selectedItem];
+        localStorage.setItem("RewardsList", JSON.stringify(updatedRewardsList));
+        console.log("Liste Rewards mise à jour dans LocalStorage:", updatedRewardsList);
+        return updatedRewardsList;
+      });
     }
   };
 

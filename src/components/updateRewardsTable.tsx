@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RewardsTable from "./rewardsTable";
+import "../styles/RewardsTable.css";
 
 function UpdateRewardsTable() {
 	const [showRewards, setShowRewards] = useState(false);

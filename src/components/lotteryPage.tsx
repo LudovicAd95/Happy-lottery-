@@ -1,13 +1,13 @@
 import Info from './info';
 import RandomGift from './randomGift';
-import RewardsTable from './rewardsTable';
+import UpdateRewardsTable from './updateRewardsTable';
 
 import '../styles/lotteryPage.css'
 
 function LotteryPage () {
   return (
     <div className='mainPage'>
-      <RewardsTable />
+      <UpdateRewardsTable />
       <RandomGift />
       <Info />
     </div>

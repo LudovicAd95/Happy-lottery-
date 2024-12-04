@@ -37,10 +37,9 @@ function RewardsTable() {
   }, []);
 
   return (
-    <div className="rewards-container">
-      <h1>Tableau des récompenses:</h1>
+
       <div className="usersList">
-        <h2>Liste des utilisateurs:</h2>
+        <h2>Liste des gagnants:</h2>
         <table>
           <thead>
             <tr>
@@ -64,7 +63,6 @@ function RewardsTable() {
           </tbody>
         </table>
       </div>
-    </div>
   );
 }
 

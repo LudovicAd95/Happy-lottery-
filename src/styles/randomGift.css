@@ -8,7 +8,7 @@
     border: solid red;
 }
 
-.h1 {
+.title {
     font-size: 3em;
     color: blue;
 }
@@ -16,4 +16,17 @@
 .h2 {
     font-size: 2em;
     color: red;
+}
+
+.randomItem {
+    font-size: 1.5em;
+    color: green;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: solid blue;
 }

@@ -33,7 +33,7 @@ function RandomGift() {
       const randomIndex = Math.floor(Math.random() * toys.length);
       const selectedItem = toys[randomIndex];
       setRandomItem(selectedItem);
-      localStorage.setItem("randomItem", JSON.stringify(selectedItem)); // Ajouter dans le localStorage
+      localStorage.setItem("randomItem", JSON.stringify(selectedItem));
       console.log("Item aléatoire ajouté au localStorage:", selectedItem);
     }
   };

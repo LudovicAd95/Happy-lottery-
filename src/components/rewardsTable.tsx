@@ -26,13 +26,13 @@ function RewardsTable() {
     const storedUsersList = localStorage.getItem("usersList");
     if (storedUsersList) {
       setUsersList(JSON.parse(storedUsersList));
-      console.log("Reception data usersList dans RewardsTable:", storedUsersList);
+      console.log("Reception des data dans usersList dans RewardsTable:", storedUsersList);
     }
 
     const storedSelectedItem = localStorage.getItem("randomItem");
     if (storedSelectedItem) {
       setSelectedItem(JSON.parse(storedSelectedItem));
-      console.log("Reception data selectedItem dans RewardsTable:", storedSelectedItem);
+      console.log("Reception des data dans selectedItem dans RewardsTable:", storedSelectedItem);
     }
   }, []);
 

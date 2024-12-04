@@ -23,10 +23,7 @@ border: solid 2px #d4d40c;
   font-size: 1.5rem; 
     text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
     font-weight: bold;
-
-  
 }
-
 
 #root {
   display: flex;
@@ -60,4 +57,5 @@ border: solid 2px #d4d40c;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3em;
     }

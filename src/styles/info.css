@@ -1,12 +1,14 @@
-.infoCard {
+.infoContainer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: aliceblue;
 	align-items: center;
 	margin-top: 20px;
-	border: solid red;
+	background-color: #d40c0c53;
+	border-radius:60px;
+	border: solid 2px #d4d40c; 	
 }
+
 
 .form {
 	display: flex;
@@ -16,10 +18,33 @@
 	margin-top: 20px;
 }
 
-.h1 {
-	color: rgb(24, 35, 122);
+.form input {
+	display: flex;
+	border-radius: 15px;
+	padding: 0.2em;
+	border: none;
+	align-items: end;
+}
+.form select {
+	display: flex;
+	border-radius: 15px;
+	padding: 0.2em;	
+	border: none;
+	align-items: end;
+}
+label {
+	color: whitesmoke;
+
 }
 
-.magicButton {
-	display: flex;
+#magicButton {
+	border-radius: 15px;
+	padding: 0.75rem 1rem;
+	background-color: green;
+	color: white;
+	border: none;
+	margin-top: 5em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.2s;
 }
